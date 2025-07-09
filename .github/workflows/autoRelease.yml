@@ -30,7 +30,7 @@ jobs:
             PATCH=${BASH_REMATCH[3]}
             NEW_TAG="v$MAJOR.$MINOR.$((PATCH+1))"
           else
-            NEW_TAG="v1.0.0"
+            NEW_TAG="v1.0.1"
           fi
           echo "New tag: $NEW_TAG"
           echo "new_tag=$NEW_TAG" >> $GITHUB_OUTPUT
